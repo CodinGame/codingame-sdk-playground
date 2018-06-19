@@ -3,12 +3,14 @@ cover: cover.png
 plan:
   - title: Getting started
     plan:
+      - title: Introduction
+        statement: getting started/tutorial-1-introduction.md
       - title: Create a Multiplayer Game
-        statement: getting started/tutorial-1-multiplayer.md
+        statement: getting started/tutorial-2-multiplayer.md
       - title: Create a Solo Game
-        statement: getting started/tutorial-2-solo.md
+        statement: getting started/tutorial-3-solo.md
       - title: Create an Optimization Game
-        statement: getting started/tutorial-3-opti.md
+        statement: getting started/tutorial-4-opti.md
   - title: Core concepts
     plan:
       - title: Game Runner
