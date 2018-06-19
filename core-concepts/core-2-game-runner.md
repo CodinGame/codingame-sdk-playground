@@ -1,4 +1,4 @@
-# Game Runner
+# The Game Runner
 
 The Game Runner lets you run your game locally during developement. It comes with a handy HTML package to watch each game's replay.
 
