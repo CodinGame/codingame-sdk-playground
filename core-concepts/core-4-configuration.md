@@ -1,14 +1,32 @@
 # Configuring your game
 
+## General configuration
 
-## Code Stub
+This section introduces configuration for any type of game.
+
+For type-specific configuration, see:
+- [Multiplayer Game Configuration](#multiplayer-game-configuration)
+- [Solo Game Configuration](#solo-game-configuration)
+- [Optimization Game Configuration](#optimization-game-configuration) 
+>Note that an Optimization game *is* a Solo game with more settings
+
+### Code Stub
 
 You may add to the config/ folder a text file named `stub.txt`. If the contents of this file is a syntaxically valid **CodinGame Stub Generator** input, the IDE will be prefilled with input/output code.
 
 See [Stub Generator Syntax](https://github.com/CodinGame/codingame-game-engine/blob/master/stubGeneratorSyntax.md) for details.
 
 
-## Viewer configuration
+### Loading assets
+Assets are expected to be placed in the `src/main/resources/view/assets` folder of your game's project.
+
+You can then use the images in the texture cache with the [Graphic Entity Module](../modules/entities/):
+```java
+entityManager.createSprite.setImage("background.png");
+```
+
+
+### Viewer configuration <a name="viewer-configuration"></a>
 
 You can change the default player colors to whatever you wish by adding an export to `config.js`:
 ```javascript
@@ -32,7 +50,7 @@ export const gameName = 'MyGame';
 This doesn't have any effect on user experience yet.
 
 
-## Statement
+### Statement
 
 Place a file named `statement_en.html` in the `config/` directory and it will be used for as the statement of your game.
 
@@ -40,7 +58,7 @@ For a game with multiple leagues, you may place a file named `statement_en.html.
 
 Within the `.tpl` file, you may place special comment blocks to indicate whether a block of html should be included for any specified league.
 
-### Example
+#### Example
 
 This `statement_en.html.tpl`:
 ```html
@@ -87,10 +105,60 @@ Third league in `config/level3/statement_en.html`:
 ```
 
 
-## Welcome popup
+### Activating game logs
+
+You can view the data that the Referee and the Players send each other by editing the built-in logger's settings.
+To do this, open `log4j2.properties` in the root of your project and replace ```rootLogger.level = warn``` with ```rootLogger.level = info```.
+Additionally, if you would like to see the output of the different modules, you can use:
+`rootLogger.level = trace`.
+
+
+# Multiplayer Game Configuration <a name="multiplayer-game-configuration"></a>
+
+
+### Welcome popup
 
 Welcome popups can be used in **Multiplayer** games with multiple leagues. They will be displayed when a player is promoted to the next league.
 
 Place a file named `welcome_en.html` in every `config/level<number>` directory you want the popup to be used in.
 
 You can display images using `<img src="your_image.jpg"/>`. The image files must be located in the same directory.
+
+#### Example
+
+`TODO`
+
+
+# Solo Game Configuration <a name="solo-game-configuration"></a>
+
+
+### Test case file <a name="test-case-file"></a>
+
+You will need to create test case files to run your **Solo** game.
+
+Your test cases must be named `test<number>.json` and placed in the `config` directory. Their `<number>` determine the order they will be listed in the CodinGame IDE. Here is an example:
+
+`test1.json`
+```json
+{
+	"title": {
+		"2": "One path",
+		"1": "Un seul chemin"
+	},
+	"testIn": ".o...\\n.ooo.\\n...o.",
+	"isTest": "true",
+	"isValidator": "false"
+}
+```
+- **title:**
+    - **2:** English title, this parameter is mandatory.
+    - **1:** French title, optional.
+- **testIn:** The content of your test case. It can contain multiple lines separated with `\\n`.
+- **isTest:** If true, this test will be visible and used as a regular test case.
+- **isValidator:** If true, this test will be use to validate the player's code. You can use this to avoid hardcoded solutions.
+
+
+## Optimization Game Configuration <a name="optimization-game-configuration"></a>
+
+
+`TODO`
