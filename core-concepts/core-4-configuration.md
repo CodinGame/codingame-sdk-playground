@@ -161,4 +161,12 @@ Your test cases must be named `test<number>.json` and placed in the `config` dir
 ## Optimization Game Configuration <a name="optimization-game-configuration"></a>
 
 
-`TODO`
+**Optimization** games are **Solo** games with additional configuration.
+
+First, you will need to add a `criteria` and a `sorting_order` property in `config.ini`.
+- The `criteria` corresponds to the label of the player's score. For example, it can be `Points`, `Fuel` or `Distance`.
+- The `sorting_order` determines the ranking order. Its value must be either `asc` or `desc`. If the player whose Fuel quantity is higher should be first, choose `asc`. If the goal is to win the game in the shortest time, choose `desc`.
+
+You can also choose to translate your criteria in French by using the optional properties `criteria_en` and `criteria_fr`.
+
+Once this configuration is done, you will need to send your player's score with the [Game Manager](core-3-game-manager.md#optimization-game-features)

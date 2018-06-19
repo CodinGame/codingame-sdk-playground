@@ -88,7 +88,7 @@ For type-specific features, see:
 
 You can get your `Player` instances from the Game Manager. They allow you to interact with the players' AIs.
 
-You can use the `getNicknameToken()` and `getAvatarToken()` that will be converted into the real corresponding information by the viewer.
+You can use the `getNicknameToken()` and `getAvatarToken()` methods to get tokens that will be converted into the real corresponding information by the viewer.
 
 To allow the AIs to play:
 - You must send input data to your players with `sendInputLine()`. 
@@ -136,12 +136,52 @@ gameManager.addToGameSummary(String.format("%s pushed %s!", player1.getNicknameT
 
 ## Multiplayer Game Features <a name="multiplayer-game-features"></a>
 
-`TODO`
+In a Multiplayer game, you will need to use the `MultiplayerGameManager` implementation parameterized with your `Player`.
+
+### Game parameters
+
+The Multiplayer Game Manager gives you access to **Game parameters**. These are used to vary your game and allow configuration in the CodinGame IDE Options. The game parameters is a `Properties` object you can get with `getGameParameters()`.
+
+By default, the game parameters contain a randomized `seed`.
+
+### Active Players
+
+All the players are active at the beginning of a battle. If they lose or timeout, you can choose to `deactivate()` them. They will no longer be in the list of players obtained with `getActivePlayers()`.
+
+### End Game
+
+You may want to end the game before the maximum number of turns is reached. You can use `endGame()` whenever one of the players meets the victory condition.
 
 ## Solo Game Features <a name="solo-game-features"></a>
 
-`TODO`
+In a Solo game, you will need to use the `SoloGameManager` implementation parameterized with your `Player`.
+
+### Test cases
+
+Your game will need at least one test case. See [Test case files](core-4-configuration.md#test-case-file) for more details on their creation.
+
+The Solo Game Manager provides you the test case input with `getTestCase()`.
+
+### End Game
+
+In Solo games, you do not compete against other players. Therefore, you will need to decide when a player *wins* or *loses*. To do that, you have two methods:
+```java
+gameManager.winGame();
+```
+and
+```java
+gameManager.loseGame();
+```
 
 ### Optimization Game Features <a name="optimization-game-features"></a>
 
-`TODO`
+An Optimization game is a Solo game with a score. The only differences comes in the [configuration](core-4-configuration.md#optimization-game-configuration) and the metadata you need to send.
+
+Once your game is correctly configured, you need to send your player's score. We advise you to set it at the end of the game as below:
+```java
+@Override
+public void onEnd() {
+    // I set my criteria "Fuel" to what's left of the player's fuel
+    gameManager.putMetadata("Fuel", remainingFuel);
+}
+```
