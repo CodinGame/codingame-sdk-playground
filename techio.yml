@@ -13,12 +13,14 @@ plan:
         statement: getting-started/tutorial-4-opti.md
   - title: Core concepts
     plan:
+      - title: Introduction
+        statement: core-concepts/core-1-introduction.md
       - title: Game Runner
-        statement: core-concepts/core-1-game-runner.md
+        statement: core-concepts/core-2-game-runner.md
       - title: Game Manager
-        statement: core-concepts/core-2-game-manager.md
+        statement: core-concepts/core-3-game-manager.md
       - title: Configuration
-        statement: core-concepts/core-3-configuration.md
+        statement: core-concepts/core-4-configuration.md
   - title: Graphics
     plan:
       - title: Introduction
