@@ -10,6 +10,24 @@ For type-specific configuration, see:
 - [Optimization Game Configuration](#optimization-game-configuration) 
 >Note that an Optimization game *is* a Solo game with more settings
 
+### Config.ini
+
+This is the main configuration file. It must be located in the `config` folder at the root of your project.
+
+Example of `config.ini`.
+```
+title=Game Example
+type=multi
+min_players=2
+max_players=2
+```
+- **title**: The title of the question
+- **type**: The type of the game, must be either `multi`, `solo` or `opti`
+- **min_players**: The minimum number of players to play the game. Must be 1 for Solo and Optimization games, up to 8 for Multiplayer games.
+- **max_players**: The maximum number of players to play the game. Must be 1 for Solo and Optimization games, up to 8 for Multiplayer games. Of course, you cannot have max_players &lt; min_players.
+
+>This configuration can be done through a form when exporting the game, if the file `config.ini` is missing or misconfigured.
+
 ### Code Stub
 
 You may add to the config/ folder a text file named `stub.txt`. If the contents of this file is a syntaxically valid **CodinGame Stub Generator** input, the IDE will be prefilled with input/output code.
@@ -57,6 +75,8 @@ Place a file named `statement_en.html` in the `config/` directory and it will be
 For a game with multiple leagues, you may place a file named `statement_en.html.tpl` in the `config/` directory and it will be used as a basis for the statement of each league when you click the export button.
 
 Within the `.tpl` file, you may place special comment blocks to indicate whether a block of html should be included for any specified league.
+
+Optionally, you can tranlate your statements in French using `statement_fr.html` files.
 
 #### Example
 
@@ -124,6 +144,8 @@ Place a file named `welcome_en.html` in every `config/level<number>` directory y
 
 You can display images using `<img src="your_image.jpg"/>`. The image files must be located in the same directory.
 
+Optionally, you can tranlate your popups in French using `welcome_fr.html` files.
+
 #### Example
 
 `TODO`
@@ -168,5 +190,7 @@ First, you will need to add a `criteria` and a `sorting_order` property in `conf
 - The `sorting_order` determines the ranking order. Its value must be either `asc` or `desc`. If the player whose Fuel quantity is higher should be first, choose `asc`. If the goal is to win the game in the shortest time, choose `desc`.
 
 You can also choose to translate your criteria in French by using the optional properties `criteria_en` and `criteria_fr`.
+
+>This configuration can be done through a form when exporting the game, if the file `config.ini` is missing or misconfigured.
 
 Once this configuration is done, you will need to send your player's score with the [Game Manager](core-3-game-manager.md#optimization-game-features)
