@@ -4,21 +4,21 @@ plan:
   - title: Getting started
     plan:
       - title: Introduction
-        statement: getting started/tutorial-1-introduction.md
+        statement: getting-started/tutorial-1-introduction.md
       - title: Create a Multiplayer Game
-        statement: getting started/tutorial-2-multiplayer.md
+        statement: getting-started/tutorial-2-multiplayer.md
       - title: Create a Solo Game
-        statement: getting started/tutorial-3-solo.md
+        statement: getting-started/tutorial-3-solo.md
       - title: Create an Optimization Game
-        statement: getting started/tutorial-4-opti.md
+        statement: getting-started/tutorial-4-opti.md
   - title: Core concepts
     plan:
       - title: Game Runner
-        statement: core concepts/core-1-game-runner.md
+        statement: core-concepts/core-1-game-runner.md
       - title: Game Manager
-        statement: core concepts/core-2-game-manager.md
+        statement: core-concepts/core-2-game-manager.md
       - title: Configuration
-        statement: core concepts/core-3-configuration.md
+        statement: core-concepts/core-3-configuration.md
   - title: Graphics
     plan:
       - title: Introduction
