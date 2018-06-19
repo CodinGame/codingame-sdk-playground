@@ -35,7 +35,11 @@ plan:
         statement: examples/examples-1-tictactoe.md
   - title: SDK extensions
     plan:
+      - title: Tools
+        statement: extensions/extensions-1-tools.md
       - title: Tooltip Module
-        statement: extensions/extensions-1-tooltip.md
+        statement: extensions/extensions-2-tooltip.md
       - title: End Screen Module
-        statement: extensions/extensions-2-endscreen.md
+        statement: extensions/extensions-3-endscreen.md
+      - title: Anim Module
+        statement: extensions/extensions-4-animmodule.md
