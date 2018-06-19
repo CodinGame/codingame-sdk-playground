@@ -5,3 +5,33 @@ plan:
     plan:
       - title: Create a Multiplayer Game
         statement: getting started/tutorial-1-multiplayer.md
+      - title: Create a Solo Game
+        statement: getting started/tutorial-2-solo.md
+      - title: Create an Optimization Game
+        statement: getting started/tutorial-3-opti.md
+  - title: Core concepts
+    plan:
+      - title: Game Runner
+        statement: core concepts/core-1-game-runner.md
+      - title: Game Manager
+        statement: core concepts/core-2-game-manager.md
+      - title: Configuration
+        statement: core concepts/core-3-configuration.md
+  - title: Graphics
+    plan:
+      - title: Introduction
+        statement: graphics/graphics-1-introduction.md
+  - title: Guidelines
+    plan:
+      - title: General Guidelines
+        statement: guidelines/guidelines-1-general.md
+  - title: Examples
+    plan:
+      - title: Tic tac toe
+        statement: examples/examples-1-tictactoe.md
+  - title: SDK extensions
+    plan:
+      - title: Tooltip Module
+        statement: extensions/extensions-1-tooltip.md
+      - title: End Screen Module
+        statement: extensions/extensions-2-endscreen.md
