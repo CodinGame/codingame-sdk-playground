@@ -61,6 +61,18 @@ Once you upload your game on [CodinGame](www.codingame.com), your project will n
 InputStream in = ClassLoader.getSystemResourceAsStream("my_awesome_file.txt");
 ```
 
+### Levels & Leagues
+
+You have the possibility to create several levels (also named leagues). A new level allows you to set a different configuration and different rules (you can get the league level in the Referee with the [Game Manager](core-concepts/core-4-game-manager.md)).
+
+There is a difference between multiplayer and solo game levels:
+- In a **multiplayer** game, your levels become leagues. The players will need to beat your Boss in the leaderboard to access the next league.
+- In a **solo** game, they are several questions. Players can switch between the different questions as they wish to.
+
+To create new levels, you need to make new folders named `level<number>` in the `config` directory. Each level can be configured like the `config` directory, which allow you to have different statements, stubs, titles, etc.
+
+Please note that you **cannot** have two different types of game in your levels. *Optimization* games are an exception: you can have several levels as long as you have a unique *opti* level (the others must be *solo* games).
+
 ### Viewer configuration <a name="viewer-configuration"></a>
 
 You can change the default player colors to whatever you wish by adding an export to `config.js`:
