@@ -10,6 +10,14 @@ For type-specific configuration, see:
 - [Optimization Game Configuration](#optimization-game-configuration) 
 >Note that an Optimization game *is* a Solo game with more settings
 
+### pom.xml configuration
+
+In order to use the CodinGame SDK, you need to correctly configure the file `pom.xml`.
+
+A good start would be to check the [game skeleton' pom.xml](https://github.com/CodinGame/game-skeleton/blob/master/pom.xml). It contains all you need to start your project.
+
+Think of updating the `artifactId` value with the name of your game in case you want to create several games.
+
 ### Config.ini
 
 This is the main configuration file. It must be located in the `config` folder at the root of your project.
