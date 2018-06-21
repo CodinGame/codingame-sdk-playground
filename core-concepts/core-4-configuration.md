@@ -42,8 +42,8 @@ You may add to the config/ folder a text file named `stub.txt`. If the contents 
 
 See [Stub Generator Syntax](https://github.com/CodinGame/codingame-game-engine/blob/master/stubGeneratorSyntax.md) for details.
 
-
 ### Loading assets
+
 Assets are expected to be placed in the `src/main/resources/view/assets` folder of your game's project.
 
 You can then use the images in the texture cache with the [Graphic Entity Module](../modules/entities/):
@@ -51,6 +51,15 @@ You can then use the images in the texture cache with the [Graphic Entity Module
 entityManager.createSprite.setImage("background.png");
 ```
 
+### Other resources
+
+You might need to upload other resources such as text files, csv or whatever your creativity will bring you to create.
+
+Once you upload your game on [CodinGame](www.codingame.com), your project will not have the same file system as the one you use on your computer. In order to read your files, you must place them in the `src/main/resources` folder and use Java's `ClassLoader`:
+
+```java
+InputStream in = ClassLoader.getSystemResourceAsStream("my_awesome_file.txt");
+```
 
 ### Viewer configuration <a name="viewer-configuration"></a>
 
@@ -74,7 +83,6 @@ You can change the identifier of your game for the IDE's cache by adding an expo
 export const gameName = 'MyGame';
 ```
 This doesn't have any effect on user experience yet.
-
 
 ### Statement
 
