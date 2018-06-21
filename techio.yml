@@ -31,8 +31,8 @@ plan:
         statement: guidelines/guidelines-1-general.md
   - title: Examples
     plan:
-      - title: Tic tac toe
-        statement: examples/examples-1-tictactoe.md
+      - title: Learn from existing games
+        statement: examples/examples-1-links.md
   - title: SDK extensions
     plan:
       - title: Tools

@@ -15,3 +15,12 @@ The `Referee` class must implement the methods `init` and `gameTurn`. The `Playe
 The entry point of the game is the class `SoloGameManager` or `MultiplayerGameManager` (corresponding to the type of game you are creating). This class calls the `Referee` on each turn, and sends data to the viewer.
 
 ![Main classes](resources/schema-sdk.svg)
+
+# Resources
+
+- [Javadoc](https://codingame.github.io/codingame-sdk-doc/)
+- [SDK source](https://github.com/CodinGame/codingame-game-engine)
+- [Free to use graphical assets](https://github.com/CodinGame/codingame-sdk-assets)
+- [Game Skeleton](https://github.com/CodinGame/game-skeleton)
+- [Contribute Page](https://www.codingame.com/contribute/)
+- [Extending the SDK with Modules](https://github.com/CodinGame/codingame-sdk-modules)
