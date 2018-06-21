@@ -21,7 +21,7 @@ const HEIGHT = 1080;
 #### utils.js
 Contains general purpose utility functions.
 
-```javascript
+```java
 /**
  * return word padded to width with char characters
  */
@@ -75,7 +75,7 @@ function fitAspectRatio(srcWidth, srcHeight, maxWidth, maxHeight, padding)
 #### transitions.js
 Contains interpolation functions that map a [0;1] input to a [0;1] output.
 
-```javascript
+```java
 /**
  * Traces a bell shaped curve
  */
