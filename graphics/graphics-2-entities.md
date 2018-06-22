@@ -32,7 +32,7 @@ circle
 	.setX(player.getX(), Curve.LINEAR)
 	.setY(player.getY(), Curve.LINEAR);
 ```
-## Creating a group of sprites
+## Creating a group of sprites <a name="creating-a-group-of-sprites"></a>
 ```java
 Sprite planet1 = graphicEntityModule.createSprite()
 				.setImage("planet")
