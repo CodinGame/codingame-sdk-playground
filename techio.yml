@@ -25,6 +25,14 @@ plan:
     plan:
       - title: Introduction
         statement: graphics/graphics-1-introduction.md
+      - title: Entities, Shapes, Sprites
+        statement: graphics/graphics-2-entities.md
+      - title: Interact with the viewer
+        statement: graphics/graphics-3-states.md
+      - title: Spritesheets
+        statement: graphics/graphics-4-spritesheets.md
+      - title: Animations
+        statement: graphics/graphics-5-animations.md
   - title: Guidelines
     plan:
       - title: General Guidelines
