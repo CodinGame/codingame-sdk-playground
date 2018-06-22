@@ -33,6 +33,8 @@ plan:
         statement: graphics/graphics-4-spritesheets.md
       - title: Animations
         statement: graphics/graphics-5-animations.md
+      - title: Advanced features
+        statement: graphics/graphics-6-advanced.md
   - title: Guidelines
     plan:
       - title: General Guidelines

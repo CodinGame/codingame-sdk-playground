@@ -22,6 +22,14 @@ Or a more recent version.
 
 The GraphicEntityModule is an injectable Guice Singleton.
 
+# Table of contents
+
+- Create and manipulate [Entities, Shapes and Sprites](graphics-2-entities.md).
+- Understand how to [interact with the viewer](graphics-3-states.md).
+- See how to use [Spritesheets](graphics-4-spritesheets.md).
+- Start [Animating](graphics-5-animations.md) your game!
+- Comfortable with the module? Check [Advanced features](graphics-6-advanced.md).
+
 # Go further and create your own modules
 
 Using this module is the easiest way to draw your graphical entities in the viewer. Although it provides many features, you might want to add your own. See the [SDK extensions](extensions/extensions-1-tools.md) to get help starting!

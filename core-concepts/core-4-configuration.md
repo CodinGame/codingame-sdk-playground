@@ -7,8 +7,7 @@ This section introduces configuration for any type of game.
 For type-specific configuration, see:
 - [Multiplayer Game Configuration](#multiplayer-game-configuration)
 - [Solo Game Configuration](#solo-game-configuration)
-- [Optimization Game Configuration](#optimization-game-configuration) 
->Note that an Optimization game *is* a Solo game with more settings
+- [Optimization Game Configuration](#optimization-game-configuration)
 
 ### pom.xml configuration
 
@@ -18,7 +17,7 @@ A good start would be to check the [game skeleton' pom.xml](https://github.com/C
 
 Think of updating the `artifactId` value with the name of your game in case you want to create several games.
 
-### Config.ini
+### config.ini
 
 This is the main configuration file. It must be located in the `config` folder at the root of your project.
 
