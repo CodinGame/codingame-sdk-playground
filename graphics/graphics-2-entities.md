@@ -14,7 +14,7 @@ Every sprite, shape, text, etc are entities displayable in the viewer. They impl
 ## Creating a circle
 ```java
 // Creates a green circle
-Circle circle = entityModule.createCircle()
+Circle circle = graphicEntityModule.createCircle()
 			.setRadius(50)
 			.setLineWidth(0)
 			.setFillColor(0x00FF00);
@@ -26,22 +26,27 @@ circle
 	.setX(player.getX())
 	.setY(player.getY());
 ```
-
+### With a Curve
+```java
+circle
+	.setX(player.getX(), Curve.LINEAR)
+	.setY(player.getY(), Curve.LINEAR);
+```
 ## Creating a group of sprites
 ```java
-Sprite planet1 = entityManager.createSprite()
+Sprite planet1 = graphicEntityModule.createSprite()
 				.setImage("planet")
 				.setX(-20);
-Sprite planet2 = entityManager.createSprite()
+Sprite planet2 = graphicEntityModule.createSprite()
 				.setImage("planet")
 				.setX(30);
 				.setY(-10);
-Sprite planet3 = entityManager.createSprite()
+Sprite planet3 = graphicEntityModule.createSprite()
 				.setImage("planet")
 				.setY(20);
 
 // The planets are around the point (960,540).
-Group system = entityManager.createGroup(planet1, planet2, planet3)
+Group system = graphicEntityModule.createGroup(planet1, planet2, planet3)
 					.setX(960)
 					.setY(540);
 ```
