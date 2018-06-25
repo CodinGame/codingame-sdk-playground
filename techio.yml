@@ -35,14 +35,6 @@ plan:
         statement: graphics/graphics-5-animations.md
       - title: Advanced features
         statement: graphics/graphics-6-advanced.md
-  - title: Guidelines
-    plan:
-      - title: General Guidelines
-        statement: guidelines/guidelines-1-general.md
-  - title: Examples
-    plan:
-      - title: Learn from existing games
-        statement: examples/examples-1-links.md
   - title: SDK extensions
     plan:
       - title: Tools
@@ -53,3 +45,9 @@ plan:
         statement: extensions/extensions-3-endscreen.md
       - title: Anim Module
         statement: extensions/extensions-4-animmodule.md
+  - title: One more thing
+    plan:
+      - title: Guidelines
+        statement: guidelines/guidelines-1-general.md
+      - title: Example games
+        statement: examples/examples-1-links.md
