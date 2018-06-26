@@ -148,7 +148,7 @@ By default, the game parameters contain a randomized `seed`.
 
 All the players are active at the beginning of a battle. If they lose or timeout, you can choose to `deactivate()` them. They will no longer be in the list of players obtained with `getActivePlayers()`.
 
-### End Game
+### End Game
 
 You may want to end the game before the maximum number of turns is reached. You can use `endGame()` whenever one of the players meets the victory condition.
 
