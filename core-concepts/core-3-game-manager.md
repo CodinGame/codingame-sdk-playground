@@ -86,7 +86,7 @@ For type-specific features, see:
 
 ### Players
 
-You can get your `Player` instances from the Game Manager. They allow you to interact with the players' AIs.
+You can get your `Player` instances from the Game Manager with `getPlayer` methods. They allow you to interact with the players' AIs.
 
 You can use the `getNicknameToken()` and `getAvatarToken()` methods to get tokens that will be converted into the real corresponding information by the viewer.
 
@@ -173,11 +173,11 @@ and
 gameManager.loseGame();
 ```
 
-### Optimization Game Features <a name="optimization-game-features"></a>
+## Optimization Game Features <a name="optimization-game-features"></a>
 
 An Optimization game is a Solo game with a score. The only differences comes in the [configuration](core-4-configuration.md#optimization-game-configuration) and the metadata you need to send.
 
-Once your game is correctly configured, you need to send your player's score. We advise you to set it at the end of the game as below:
+Once your game is correctly configured, you need to send your player's score. We advise you set it at the end of the game as below:
 ```java
 @Override
 public void onEnd() {
@@ -185,3 +185,9 @@ public void onEnd() {
     gameManager.putMetadata("Fuel", remainingFuel);
 }
 ```
+
+### Score calculation
+
+Once the game is online, players will be able to submit their code and a score will be calculated to determine their rank in the leaderboard.
+
+This score corresponds to **the sum of all the scores obtained when running validators**. Validators are specific kinds of test cases. Make sure you [configure them correctly](core-4-configuration.md#test-case-file).

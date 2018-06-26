@@ -237,7 +237,7 @@ Your test cases must be named `test<number>.json` and placed in the `config` dir
 		"2": "One path",
 		"1": "Un seul chemin"
 	},
-	"testIn": ".o...\\n.ooo.\\n...o.",
+	"testIn": ".o...\n.ooo.\n...o.",
 	"isTest": "true",
 	"isValidator": "false"
 }
@@ -247,7 +247,7 @@ Your test cases must be named `test<number>.json` and placed in the `config` dir
     - **1:** French title, optional.
 - **testIn:** The content of your test case. It can contain multiple lines separated with `\\n`.
 - **isTest:** If true, this test will be visible and used as a regular test case.
-- **isValidator:** If true, this test will be use to validate the player's code. You can use this to avoid hardcoded solutions.
+- **isValidator:** If true, this test will be used to validate the player's code. You can use this to avoid hardcoded solutions and calculate Optimization games scores.
 
 
 ## Optimization Game Configuration <a name="optimization-game-configuration"></a>
