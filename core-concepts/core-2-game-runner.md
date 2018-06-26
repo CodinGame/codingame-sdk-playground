@@ -1,6 +1,6 @@
 # The Game Runner
 
-The Game Runner lets you run your game locally during developement. It comes with a handy HTML package to watch each game's replay.
+The Game Runner lets you run your game locally during developement. It comes with a handy HTML package to watch each game's replay. The parameters you set to the Game Runner will not affect the final contribution.
 
 You can create your own AI for your game and use the Game Runner to connect it to your game's implementation.
 
@@ -18,7 +18,11 @@ Include the dependency below in the pom.xml of your project.
 ```
 Or a more recent version.
 
+As the Game Runner is meant for testing, you must create a Class with a `main` method in `set/test/java`.
+
 Instantiate a `MultiplayerGameRunner` or a `SoloGameRunner` to launch a game with the `start()` method. This will create a temporary directory and start a server to serve the files of that directory. You need not stop the previous server to launch a new game.
+
+In addition, you will need to set **Agents** to the Game Runner. They are programs you must code to test your game, just as if they were players' code submissions.
 
 By default, you can access the game viewer for testing at [http://localhost:8888/test.html](http://localhost:8888/test.html). You may change the configuration of the game viewer by editing the `config.js` file. See the [Viewer configuration](core-4-configuration.md#viewer-configuration) for more details.
 
@@ -31,23 +35,23 @@ In order to run a game, you must have prepared a `Referee` and a `Player`. The g
 
 ## Running a **Multiplayer** game
 
-### Using the same java class for each player:
+### Using the same java class for each agent:
 ```java
 MultiplayerGameRunner gameRunner = new MultiplayerGameRunner();
-gameRunner.addAgent(Player.class);
-gameRunner.addAgent(Player.class);
+gameRunner.addAgent(Agent.class);
+gameRunner.addAgent(Agent.class);
 gameRunner.start();
     
 ```
 ⚠ _This method will prevent the agent from printing to stdout from any other class than Player. It has been deprecated for this reason._
 
-### Using external python programs as players:
+### Using external python programs as agents:
 ```java
 MultiplayerGameRunner gameRunner = new MultiplayerGameRunner();
 
-gameRunner.addAgent("python3 /home/user/player1.py");
-gameRunner.addAgent("python3 /home/user/player2.py");
-gameRunner.addAgent("python3 /home/user/player3.py");
+gameRunner.addAgent("python3 /home/user/agent1.py");
+gameRunner.addAgent("python3 /home/user/agent2.py");
+gameRunner.addAgent("python3 /home/user/agent3.py");
 
 gameRunner.start();
 ```
@@ -61,8 +65,8 @@ refereeInput.put("seed", "53295539");
 
 MultiplayerGameRunner gameRunner = new MultiplayerGameRunner();
 gameRunner.setGameParameters(refereeInput);
-gameRunner.addAgent(Player1.class);
-gameRunner.addAgent(Player2.class);
+gameRunner.addAgent(Agent1.class);
+gameRunner.addAgent(Agent2.class);
 gameRunner.start();
 ```
 
@@ -72,7 +76,7 @@ gameRunner.start();
 ```java
 SoloGameRunner gameRunner = new SoloGameRunner();
 gameRunner.setTestCase("test1.json"); // You must set a test case to run your game.
-gameRunner.setAgent(Player.class);
+gameRunner.setAgent(Solution.class);
 gameRunner.start();
 ```
 
