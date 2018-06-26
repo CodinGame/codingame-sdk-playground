@@ -4,6 +4,16 @@ An **Optimization** game is very similar to a **Solo** game. This is why we adap
 
 It is suggested to follow the [Solo game creation guide](tutorial-3-solo.md) with the adapted version. The source code is available on GitHub: [https://github.com/CodinGame/game-fishy-adventures/tree/optimization](https://github.com/CodinGame/game-fishy-adventures/tree/optimization)
 
+## What is an Optimization game?
+
+As a Solo game, an Optimization game has test cases. Their purpose here is different as there is a *score* set to the player and a leaderboard. This score should scale in function of how optimized the player's solution is.
+
+Let's take the example of Fishy Adventures:
+
+![Game preview](resources/optiviewer.png)
+
+In the Solo version of this game, the purpose is to gather one egg. Here, there are several groups of eggs with values (the number of eggs in the group) and you cannot gather all of them. You will need to *optimize* the path you take to collect as many eggs as possible.
+
 ## Import project
 
 As stated in the Solo guide, you need to download the source code of the game. The Optimization version of the game is located on the `optimization` branch of the repository:
