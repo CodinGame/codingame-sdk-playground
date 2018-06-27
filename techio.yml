@@ -48,6 +48,6 @@ plan:
   - title: One more thing
     plan:
       - title: Guidelines
-        statement: guidelines/guidelines-1-general.md
+        statement: misc/misc-1-guidelines.md
       - title: Example games
-        statement: examples/examples-1-links.md
+        statement: misc/misc-2-examples.md
