@@ -1,6 +1,6 @@
 # Graphics
 
-The graphics of a game created with the CodinGame SDK are handled with the Javascript framework [PIXI](http://www.pixijs.com/). This section introduces the main features of the Graphic Entity Module, a Java module that you can use to interact with the viewer.
+The graphics of a game created with the CodinGame SDK are handled with the Javascript framework [PixiJS](http://www.pixijs.com/). This section introduces the main features of the Graphic Entity Module, a Java module that you can use to interact with the viewer.
 
 This module takes care of displaying and animating graphical entities in the replay of the game, each frame of the viewer corresponds to a game turn.
 

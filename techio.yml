@@ -37,14 +37,16 @@ plan:
         statement: graphics/graphics-6-advanced.md
   - title: SDK extensions
     plan:
-      - title: Tools
+      - title: Introduction
         statement: extensions/extensions-1-tools.md
+      - title: Create your own modules
+        statement: extensions/extensions-2-tutorial.md
       - title: Tooltip Module
-        statement: extensions/extensions-2-tooltip.md
+        statement: extensions/extensions-3-tooltip.md
       - title: End Screen Module
-        statement: extensions/extensions-3-endscreen.md
+        statement: extensions/extensions-4-endscreen.md
       - title: Anim Module
-        statement: extensions/extensions-4-animmodule.md
+        statement: extensions/extensions-5-animmodule.md
   - title: One more thing
     plan:
       - title: Guidelines
