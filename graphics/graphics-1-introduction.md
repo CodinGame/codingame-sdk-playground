@@ -15,10 +15,10 @@ Include the dependency below in the pom.xml of your project.
 <dependency>
 	<groupId>com.codingame.gameengine</groupId>
 	<artifactId>module-entities</artifactId>
-	<version>2.3</version>
+	<version>2.4</version>
 </dependency>
 ```
-Or a more recent version.
+Or a more recent version. See the [Release Notes](misc/misc-3-release-notes.md).
 
 The GraphicEntityModule is an injectable Guice Singleton.
 

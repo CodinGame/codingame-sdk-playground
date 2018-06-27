@@ -12,7 +12,7 @@ The behaviour can be different:
 - For Sprites as masks: black pixels will hide the Entity, any other pixel will show it.
 - For Shapes as masks: the color or the alpha of the shape doesn't affect the mask, all pixels of the shape are considered as a white mask
 
-## Buffered Groups
+## Buffered Groups <a name="buffered-groups"></a>
 
 If your game uses tiles, you might experience some artifacts when resizing the viewer.
 

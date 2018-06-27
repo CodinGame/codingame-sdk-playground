@@ -51,3 +51,5 @@ plan:
         statement: misc/misc-1-guidelines.md
       - title: Example games
         statement: misc/misc-2-examples.md
+      - title: Release notes
+        statement: misc/misc-3-release-notes.md
