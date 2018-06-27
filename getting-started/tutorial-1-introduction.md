@@ -2,7 +2,7 @@
 
 The CodinGame SDK is a Java project that allows you to write programming games for [CodinGame](https://www.codingame.com).
 
-A game is divided into 2 parts: the **referee** and the **viewer**. The **referee** is a program that implements the game rules. It will communicate with the players and at the end it will assign a score to each player (for *Multiplayer* and *Optimization* games) or a win/lose status. The **viewer** displays the game using *frames* sent by the **referee**.
+A game is divided into 2 parts: the **referee** and the **viewer**. The **referee** is a program that implements the game rules. It will communicate with the players and at the end it will assign a score to each player or a win/lose status (depending on which type of game you create). The **viewer** displays the game using *frames* sent by the **referee**.
 
 The CodinGame SDK provides the main classes to write the **referee** and a **viewer**. A module called **GraphicEntityModule** allows the display of sprites and shapes directly from the **referee** code. If you want to do something more advanced, it's possible to write your own module.
 
