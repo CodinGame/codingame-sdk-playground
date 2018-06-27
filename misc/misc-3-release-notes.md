@@ -3,10 +3,11 @@
 The CodinGame SDK is regularly updated and improved. This document lets you know what changed in the latest releases.
 
 ## 2.4
+*June 25, 2018*
 
 ### New feature
 
-- [Buffered Groups](graphics/graphics-6-advanced#buffered-groups) have been added.
+- [Buffered Groups](graphics/graphics-6-advanced.md#buffered-groups) have been added.
 
 ### Bug fixes
 
@@ -14,6 +15,7 @@ The CodinGame SDK is regularly updated and improved. This document lets you know
 - The configuration verification does not check the presence of `welcome_en.html` in the first league anymore. It also concerns games with no league system.
 
 ## 2.3
+*June 8, 2018*
 
 ### Bug fixes
 
@@ -21,6 +23,7 @@ The CodinGame SDK is regularly updated and improved. This document lets you know
 - A bug would prevent you from exporting a game that was too heavy. It is now fixed.
 
 ## 2.2
+*June 4, 2018*
 
 ### Bug fixes
 
@@ -28,12 +31,14 @@ The CodinGame SDK is regularly updated and improved. This document lets you know
 - A regression would prevent the configuration form from being displayed. This feature is back.
 
 ## 2.1
+*June 1, 2018*
 
 ### Bug fix
 
 - The Graphic Entity Module would stop displaying the last frame of a replay. This is now fixed.
 
 ## 2.0
+*June 1, 2018*
 
 ### New features
 
