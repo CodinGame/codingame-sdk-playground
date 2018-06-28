@@ -186,7 +186,7 @@ public void onEnd() {
 }
 ```
 
-### Score calculation
+### Score calculation
 
 Once the game is online, players will be able to submit their code and a score will be calculated to determine their rank in the leaderboard.
 
