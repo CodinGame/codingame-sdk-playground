@@ -68,9 +68,26 @@ There is a difference between multiplayer and solo game levels:
 - In a **multiplayer** game, your levels become leagues. The players will need to beat your Boss in the leaderboard to access the next league.
 - In a **solo** game, they are several questions. Players can switch between the different questions as they wish to.
 
-To create new levels, you need to make new folders named `level<number>` in the `config` directory. Each level can be configured like the `config` directory, which allow you to have different statements, stubs, titles, etc.
+To create new levels, you need to make new folders named `level<number>` in the `config` directory. Their `<number>` must be positive and will be used to display your questions/leagues in the right order. Each level can be configured like the `config` directory, which allow you to have different statements, stubs, titles, etc.
 
 If you want to use the same configuration in several levels, you do not need to copy your files in every directory. If a file is missing in a `level` folder, it will inherit from `config` automatically when uploading your game.
+
+Example of a `config` directory structure:
+```
+.
+├── config
+│   ├── level1
+│   │   ├── statement_en.html
+│   │   └── Boss.java
+│   ├── level2
+│   │   └── statement_en.html
+│   ├── level3
+│   │   ├── statement_en.html
+│   │   └── config.ini
+│   ├── Boss.java
+│   ├── config.ini
+│   └── stub.txt
+```
 
 Please note that you **cannot** have two different types of game in your levels. *Optimization* games are an exception: you can have several levels as long as you have a unique *opti* level (the others must be *solo* games).
 
