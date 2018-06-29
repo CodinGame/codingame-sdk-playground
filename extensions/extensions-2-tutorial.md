@@ -84,7 +84,7 @@ The `moduleName` corresponds to the same name you will set in your Javascript fi
 
 Create a Javascript file under `src/main/resources/view` that exports your module as a class. A module has several methods called by the SDK that allows it to interact with the viewer.
 
-::: MyModule.js
+MyModule.js
 ```javascript
 export class MyModule {
   /**
