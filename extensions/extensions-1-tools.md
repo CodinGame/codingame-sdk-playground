@@ -10,10 +10,13 @@ If you want to create your own module, see [How to get started](extensions-2-tut
 
 Modules usually come up with a `.java` and a `.js` file. Place both files in `src/main/java` and `src/main/resources/view` respectively.
 
-You will also need to add the name of the module to the `src/main/resources/view/config.js` file, in the `modules` array.
+You will also need to import your module to the `src/main/resources/view/config.js` file, in the `modules` array.
 
 Example of a project using the Graphic Entity Module and the End Screen Module:
 ```javascript
+import { GraphicEntityModule } from './entity-module/GraphicEntityModule.js';
+import { EndScreenModule } from './modules/endscreen/EndScreenModule.js';
+
 export const modules = [
 	GraphicEntityModule,
 	EndScreenModule

@@ -4,9 +4,11 @@ To create a module, you will need a minimum of two files:
 - A Java file containing a class implementing `Module`. Its purpose is to send data to the view.
 - A Javascript file that will receive the data and interact with the viewer.
 
-You will also need to add your module to the `src/main/resources/view/config.js` file, in the `modules` array.
+You will also need to import your module to the `src/main/resources/view/config.js` file, in the `modules` array.
 
 ```javascript
+import { GraphicEntityModule } from './MyModule.js';
+
 export const modules = [
 	MyModule
 ];
