@@ -8,7 +8,7 @@ See how to **run your game locally** with the [Game Runner](core-2-game-runner.m
 
 ## The Game Manager
 
-See how to **manage players and the game course** with the [Game Manager](core-3-game-manager.md).
+See how to **manage players and the game flow** with the [Game Manager](core-3-game-manager.md).
 
 ## Configure your game
 

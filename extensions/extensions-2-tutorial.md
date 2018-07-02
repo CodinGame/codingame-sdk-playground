@@ -86,7 +86,7 @@ The `moduleName` corresponds to the same name you will set in your Javascript fi
 
 Create a Javascript file under `src/main/resources/view` that exports your module as a class. A module has several methods called by the SDK that allows it to interact with the viewer.
 
-::: MyModule.js
+MyModule.js
 ```javascript
 export class MyModule {
   /**
@@ -150,9 +150,8 @@ export class MyModule {
   }
 }
 ```
-:::
 
-You can now customize the viewer with [PixiJS](http://www.pixijs.com/)! To get started with this lib, we suggest you check the [PIXI.Container documentation](http://pixijs.download/release/docs/PIXI.Container.html) as you will need to add your objects to it.
+You can now customize the viewer with [PixiJS](http://www.pixijs.com/)! To get started with this lib, we suggest you check the [PIXI.Container documentation](http://pixijs.download/release/docs/PIXI.Container.html) as you will need to add your objects to one.
 
 ## Reference API
 

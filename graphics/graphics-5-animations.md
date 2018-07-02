@@ -16,5 +16,5 @@ graphicEntityModule.createSpriteAnimation()
 - `setImages(heroSprites)`: set a `String` array containing the filenames of the sprites.
 - `setX(hero.getX())`, `setY(hero.getY())`: set the position.
 - `setDuration(2000)`: set how long the whole animation takes to be played (in milliseconds).
-- `setLoop(true)`: if true, the animation will repeat. Else, it will be played only once and the last sprite will remain displayed.
-- `setStarted(true)`: if true, the animation plays. Else, none of the sprites are displayed.
+- `setLoop(true)`: if true, the animation will repeat. Otherwise, it will be played only once and the last sprite will remain displayed.
+- `setStarted(true)`: if true, the animation plays. Otherwise, none of the sprites are displayed.

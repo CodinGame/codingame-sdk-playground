@@ -19,7 +19,7 @@ Or a more recent version. See the [Release Notes](misc/misc-3-release-notes.md).
 
 Your project should include the class `Player` and the class `Referee`.
 Your `Referee` class may then inject (using Guice) a singleton of `SoloGameManager` or `MultiplayerGameManager` (corresponding to the type of game you want to create) parameterized by your `Player` class.
-Your `Player` class should extend from `AbstractSoloPlayer` or `AbstractMultiplayerPlayer`.
+Your `Player` class should extend `AbstractSoloPlayer` or `AbstractMultiplayerPlayer`.
 
 Example for a **Multiplayer** game:
 ```java
@@ -186,7 +186,7 @@ public void onEnd() {
 }
 ```
 
-### Score calculation
+### Score calculation
 
 Once the game is online, players will be able to submit their code and a score will be calculated to determine their rank in the leaderboard.
 

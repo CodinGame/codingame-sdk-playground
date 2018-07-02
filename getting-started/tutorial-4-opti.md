@@ -12,7 +12,7 @@ Let's take the example of Fishy Adventures:
 
 ![Game preview](resources/optiviewer.png)
 
-In the Solo version of this game, the purpose is to gather one egg. Here, there are several groups of eggs with values (the number of eggs in the group) and you cannot gather all of them. You will need to *optimize* the path you take to collect as many eggs as possible. See the [Optimization games features](core-concepts/core-3-game-manager.md#optimization-game-features) for more details.
+In the Solo version of this game, the purpose is to collect one egg. Here, there are several groups of eggs with values (the number of eggs in the group) and you cannot gather all of them. You will need to *optimize* the path you take to collect as many eggs as possible. See the [Optimization games features](core-concepts/core-3-game-manager.md#optimization-game-features) for more details.
 
 ## Import project
 
