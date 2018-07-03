@@ -8,7 +8,7 @@ The source code is available on GitHub: [https://github.com/CodinGame/game-ticta
 
 All you need is a Java IDE such as [Eclipse](https://www.eclipse.org/) or [IntelliJ](https://www.jetbrains.com/idea/) and a git client to clone the example.
 
-⚠ To use the game viewer locally, your browser must support ES6 JavaScript modules. For Chrome, that's version 61 or more. For Firefox, from version 54 this feature is behind the dom.moduleScripts.enabled preference. To change preferences in Firefox, visit about:config.
+⚠ To use the game viewer locally, your browser must support ES6 JavaScript modules. For Chrome, that's version 61 or above. For Firefox, from version 54 this feature is behind the dom.moduleScripts.enabled preference. To change preferences in Firefox, visit about:config.
 
 ## Import project
 
