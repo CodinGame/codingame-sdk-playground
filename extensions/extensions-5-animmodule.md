@@ -23,3 +23,5 @@ Instead of having the Referee output the entire sequence of images for each new 
     1; // Else animate it for the length of 1 frame
   
 ```
+
+⚠ This example might require you modify it for proper use in your own game.

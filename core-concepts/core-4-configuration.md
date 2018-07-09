@@ -41,7 +41,7 @@ You may add to the config/ folder a text file named `stub.txt`. If the contents 
 
 See [Stub Generator Syntax](https://github.com/CodinGame/codingame-game-engine/blob/master/stubGeneratorSyntax.md) for details.
 
-### Loading assets
+### Loading assets <a name="loading-assets"></a>
 
 Assets are expected to be placed in the `src/main/resources/view/assets` folder of your game's project.
 

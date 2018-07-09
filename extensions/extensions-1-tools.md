@@ -8,7 +8,7 @@ If you want to create your own module, see [How to get started](extensions-2-tut
 
 # Usage
 
-Modules usually come up with a `.java` and a `.js` file. Place both files in `src/main/java` and `src/main/resources/view` respectively.
+Modules usually come up with a `.java` and a `.js` file. Place these files in `src/main/java` and `src/main/resources/view` respectively.
 
 You will also need to import your module to the `src/main/resources/view/config.js` file, in the `modules` array.
 
@@ -23,7 +23,7 @@ export const modules = [
 ];
 ```
 
-To understand how to use the existing modules in your game, see their corresponding page:
+To understand how to edit modules, see the examples:
 - [Tooltip Module](extensions-3-tooltip.md)
-- [End SCreen Module](extensions-4-endscreen.md)
+- [End Screen Module](extensions-4-endscreen.md)
 - [Anim Module](extensions-5-animmodule.md)
