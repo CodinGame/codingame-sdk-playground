@@ -18,15 +18,15 @@ Include the dependency below in the pom.xml of your project.
 ```
 Or a more recent version. See the [Release Notes](misc/misc-3-release-notes.md).
 
-As the Game Runner is meant for testing, you must create a Class with a `main` method in `set/test/java`.
+As the Game Runner is meant for testing, you must create a Class with a `main` method in `src/test/java`.
 
-Instantiate a `MultiplayerGameRunner` or a `SoloGameRunner` to launch a game with the `start()` method. This will create a temporary directory and start a server to serve the files of that directory. You need not stop the previous server to launch a new game.
+Instantiate a `MultiplayerGameRunner` or a `SoloGameRunner` to launch a game with the `start()` method. This will create a temporary directory and start a server to serve the files of that directory. You don't need to stop the previous server to launch a new game.
 
 In addition, you will need to set **Agents** to the Game Runner. They are programs you must code to test your game, just as if they were players' code submissions.
 
 By default, you can access the game viewer for testing at [http://localhost:8888/test.html](http://localhost:8888/test.html). You may change the configuration of the game viewer by editing the `config.js` file. See the [Viewer configuration](core-4-configuration.md#viewer-configuration) for more details.
 
-Warning ⚠ To use the game viewer locally, your browser must support ES6 JavaScript **modules**. For Chrome, that's version 61 or more. For Firefox, from version 54 this feature is behind the `dom.moduleScripts.enabled` preference. To change preferences in Firefox, visit `about:config`.
+Warning ⚠ To use the game viewer locally, your browser must support ES6 JavaScript **modules**. For Chrome, that's version 61 or above. For Firefox, from version 54 this feature is behind the `dom.moduleScripts.enabled` preference. To change preferences in Firefox, visit `about:config`.
 
 
 # Examples
@@ -82,7 +82,7 @@ Once a game is run, files are copied into a temporary folder. A server is starte
 
 The test page `/test.html` let's you watch the replay as it would appear on CodinGame.
 
-Many of the viewers game-specific parameters may be changed by the default `config.js` file located in `src/main/resources/view` of your game's project. These parameters include: 
+Many of the viewer's game-specific parameters may be changed by the default `config.js` file located in `src/main/resources/view` of your game's project. These parameters include: 
 * The list of modules needed by the game.
 * The colours for the different players (affects the IDE).
 
