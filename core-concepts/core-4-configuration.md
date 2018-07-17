@@ -45,7 +45,7 @@ See [Stub Generator Syntax](https://github.com/CodinGame/codingame-game-engine/b
 
 Assets are expected to be placed in the `src/main/resources/view/assets` folder of your game's project.
 
-You can then use the images in the texture cache with the [Graphic Entity Module](../modules/entities/):
+You can then use the images in the texture cache with the [Graphic Entity Module](graphics/graphics-1-introduction.md):
 ```java
 entityManager.createSprite.setImage("background.png");
 ```
