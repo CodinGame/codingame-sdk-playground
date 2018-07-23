@@ -43,7 +43,7 @@ gameRunner.addAgent(Agent.class);
 gameRunner.start();
     
 ```
-⚠ _This method will prevent the agent from printing to stdout from any other class than Player. It has been deprecated for this reason._
+⚠ _This method will prevent the agent from printing to stdout from any other class than Player._
 
 ### Using external python programs as agents:
 ```java
