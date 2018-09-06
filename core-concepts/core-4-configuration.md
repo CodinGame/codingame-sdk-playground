@@ -108,11 +108,11 @@ export const playerColors = [
 ```
 The colors must respect the above format.
 
-You can change the identifier of your game for the IDE's cache by adding an export to `config.js`:
+You can change the identifier of your game for the online IDE's cache by adding an export to `config.js`:
 ```javascript
 export const gameName = 'MyGame';
 ```
-This doesn't have any effect on user experience yet.
+This doesn't have any effect in the local test page. It is used to store the viewer options, such as player speed, selected by the user.
 
 ### Statement
 
