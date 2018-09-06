@@ -233,10 +233,6 @@ You can display images using `<img src="your_image.jpg"/>`. The image files must
 
 Optionally, you can tranlate your popups in French using `welcome_fr.html` files.
 
-#### Example
-
-`TODO`
-
 
 # Solo Game Configuration <a name="solo-game-configuration"></a>
 
