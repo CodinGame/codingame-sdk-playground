@@ -258,7 +258,7 @@ Your test cases must be named `test<number>.json` and placed in the `config` dir
 - **title:**
     - **2:** English title, this parameter is mandatory.
     - **1:** French title, optional.
-- **testIn:** The content of your test case. It can contain multiple lines separated with `\\n`.
+- **testIn:** The content of your test case. It can contain multiple lines separated with `\n`.
 - **isTest:** If true, this test will be visible and used as a regular test case.
 - **isValidator:** If true, this test will be used to validate the player's code. You can use this to avoid hardcoded solutions and calculate Optimization games scores.
 
