@@ -1,6 +1,6 @@
 # Animations
 
-Once you have a set of images, you can animated them with a `SpriteAnimation`.
+Once you have a set of images, you can animate them with a `SpriteAnimation`.
 
 ### Example
 
