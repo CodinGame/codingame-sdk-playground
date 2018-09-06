@@ -263,7 +263,7 @@ Your test cases must be named `test<number>.json` and placed in the `config` dir
 - **isValidator:** If true, this test will be used to validate the player's code. You can use this to avoid hardcoded solutions and calculate Optimization games scores.
 
 
-## Optimization Game Configuration <a name="optimization-game-configuration"></a>
+# Optimization Game Configuration <a name="optimization-game-configuration"></a>
 
 
 **Optimization** games are **Solo** games with additional configuration.
