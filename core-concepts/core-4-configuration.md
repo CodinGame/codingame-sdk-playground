@@ -89,7 +89,7 @@ Example of a `config` directory structure:
 │   └── stub.txt
 ```
 
-Please note that you **cannot** have two different types of game in your levels. *Optimization* games are an exception: you can have several levels as long as you have a unique *opti* level (the others must be *solo* games).
+Please note that you **cannot** have different types of game in your levels. Inconsistent `config.ini` files will cause unspecified behaviour.
 
 ### Viewer configuration <a name="viewer-configuration"></a>
 
