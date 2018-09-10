@@ -18,8 +18,8 @@ If your game uses tiles, you might experience some artifacts when resizing the v
 
 ![Artifacts](resources/artifacts.png)
 
-They appear due to rounding errors. These artifacts can be reduced thanks to `BufferedGroup`. Buffered groups work the same way as `Group`, but the viewer renders its children into a dynamic texture before being displayed. 
-
+They appear due to rounding errors. These artifacts can be reduced thanks to `BufferedGroup`. Buffered groups work the same way as `Group`, but the viewer renders its children when they change into a dynamic texture before being displayed. 
+**Warning :** buffered groups inside buffered groups are not supported and can have unexpected behaviour
 ```java
 BufferedGroup bufferedGroup = graphicEntityModule.createBufferedGroup();
 ```
