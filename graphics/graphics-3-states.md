@@ -2,7 +2,7 @@
 
 In order for your entities to be animated in the viewer, you must commit your entities state. You do not need to do it manually as the module **automatically commits all the entities at the end of each frame**.
 
-However, you might want to force a commit, for example, to create animations.
+However, you might want to force a commit, for example, to create several animations of the same entity during a single frame.
 
 # Usage
 
