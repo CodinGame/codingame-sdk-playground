@@ -10,14 +10,15 @@ Two methods allow you to commit your entities:
 ```java
 commitEntityState(double t, Entity<?>... entities);
 ```
-will commit the state of `entities` at the moment `t` (0 ≤ `t` ≤ 1).
+will commit the state of `entities` at the moment `t` (0 ≤ `t` ≤ 1 ).
+0 being the start of the frame and 1 the end of the frame.
 
 ```java
 commitWorldState(double t);
 ```
 will commit the state all the entities you created at the moment `t` (0 ≤ `t` ≤ 1).
 
-Note that committing will only send the entities that have changed since the last commit.
+If you want to commit a high amount of entities you may consider using commitWorldState instead of commitEntityState for better performances.
 
 # Examples
 
@@ -30,6 +31,9 @@ graphicEntityModule.commitEntityState(0, circle);
 //Grow to big size
 circle.setRadius(70);
 graphicEntityModule.commitEntityState(0.8, circle);
+
+//Stays with the same size a little bit
+graphicEntityModule.commitEntityState(0.9, circle);
 
 //Shrinks to normal size
 circle.setRadius(50);
