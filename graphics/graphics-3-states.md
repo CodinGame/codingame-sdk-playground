@@ -1,6 +1,6 @@
-# Interact with the viewer
+# Animating entities
 
-In order for your entities to display in the viewer, you must commit your entities state. You do not need to do it manually as the module **automatically commits all the entities at the end of each turn**.
+In order for your entities to be animated in the viewer, you must commit your entities state. You do not need to do it manually as the module **automatically commits all the entities at the end of each frame**.
 
 However, you might want to force a commit, for example, to create animations.
 
