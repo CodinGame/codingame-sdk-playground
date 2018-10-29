@@ -13,7 +13,7 @@ Include the dependency below in the pom.xml of your project.
 <dependency>
   <groupId>com.codingame.gameengine</groupId>
   <artifactId>runner</artifactId>
-  <version>2.4</version>
+  <version>2.12</version>
 </dependency>
 ```
 Or a more recent version. See the [Release Notes](misc/misc-3-release-notes.md).
