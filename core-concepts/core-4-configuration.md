@@ -174,7 +174,7 @@ Third league in `config/level3/statement_en.html`:
 ### Activating game logs
 
 You can view the data that the Referee and the Players send each other by editing the built-in logger's settings.
-To do this, open `log4j2.properties` in the root of your project and replace ```rootLogger.level = warn``` with ```rootLogger.level = info```.
+To do this, open `log4j2.properties` in `src/test/ressources` and replace ```rootLogger.level = warn``` with ```rootLogger.level = info```.
 Additionally, if you would like to see the output of the different modules, you can use:
 `rootLogger.level = trace`.
 
