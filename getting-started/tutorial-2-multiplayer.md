@@ -61,7 +61,11 @@ Here's the file hierarchy for the project Tic-tac-toe:
 
 ## Launch the game
 
-The class to run is test/java/Main.java. This will launch a [web server](http://localhost:8888/) to serve a page with the viewer of the game.
+The class to run is test/java/Main.java:
+- Eclipse: Right click on Main.java > Run As > Java Application
+- IntelliJ IDEA: Right click on Main > 'Run Main.main()'
+
+This will launch a [web server](http://localhost:8888/) to serve a page with the viewer of the game.
 
 ![Game Preview](resources/testhtml.png)
 
