@@ -28,8 +28,8 @@ type=multi
 min_players=2
 max_players=2
 ```
-- **title**: The title of the question
-- **type**: The type of the game, must be either `multi`, `solo` or `opti`
+- **title**: The title of the game, used internally by the platform.
+- **type**: The type of the game, must be either `multi`, `solo` or `opti`.
 - **min_players**: The minimum number of players to play the game. Must be 1 for Solo and Optimization games, up to 8 for Multiplayer games.
 - **max_players**: The maximum number of players to play the game. Must be 1 for Solo and Optimization games, up to 8 for Multiplayer games. Of course, you cannot have max_players &lt; min_players.
 
