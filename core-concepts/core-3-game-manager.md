@@ -142,7 +142,7 @@ You can modify the duration of a frame displayed in the viewer.
 gameManager.setFrameDuration(2000);
 ```
 
-The duration is in milliseconds and the default one is 1000ms (1s).
+The duration is in milliseconds and the default one is 1000ms.
 
 You can also get this value with `gameManager.getFrameDuration();`.
 
