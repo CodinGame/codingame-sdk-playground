@@ -14,15 +14,13 @@ graphicEntityModule.createText("Hello World")
     .setFontSize(50)
     .setFillColor(0x000000); // Setting the text color to black
 ```
-You'll see in this example that you have a lot of options to manipulate the text, but this class has one downside :
-the font is not garanteed to be the good one, since the client browser has to provide it.
-So it doesn't support a lot of fonts and your font will probably be replaced by the default one of the browser.
+The only font family values that will work are: 
+"Lato" and those that are available by default on all browsers.
+If the browser does not recognise the font family, it will be displayed in the browser's a fallback font.
 
 ## BitmapText
 
 This class is used to display text using a bitmap font in your assets folder.
-The downside is that you have less options to manipulate it,
-but this is compensated by the fact that you can use any font you want.
 
 ```java
 graphicEntityModule.createBitmapText()
