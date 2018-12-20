@@ -134,6 +134,18 @@ You can add texts that will be displayed to all players in the game summary, und
 gameManager.addToGameSummary(String.format("%s pushed %s!", player1.getNicknameToken(), player2.getNicknameToken()));
 ```
 
+### Frame duration
+
+You can modify the duration of a frame displayed in the viewer.
+
+```java
+gameManager.setFrameDuration(2000);
+```
+
+The duration is in milliseconds and the default one is 1000ms.
+
+You can also get this value with `gameManager.getFrameDuration();`.
+
 ## Multiplayer Game Features <a name="multiplayer-game-features"></a>
 
 In a Multiplayer game, you will need to use the `MultiplayerGameManager` implementation parameterized with your `Player`.
