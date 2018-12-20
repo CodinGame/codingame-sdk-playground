@@ -16,7 +16,7 @@ graphicEntityModule.createText("Hello World")
 ```
 The only font family values that will work are: 
 "Lato" and those that are available by default on all browsers.
-If the browser does not recognise the font family, it will be displayed in the browser's a fallback font.
+If the browser does not recognise the font family, it will be displayed in a fallback font chosen by the browser.
 
 ## BitmapText
 
