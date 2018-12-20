@@ -21,7 +21,6 @@ So it doesn't support a lot of fonts and your font will probably be replaced by 
 ## BitmapText
 
 This class is used to display text using a bitmap font in your assets folder.
-But if you have no font (or don't set one) your text will not be displayed.
 The downside is that you have less options to manipulate it,
 but this is compensated by the fact that you can use any font you want.
 
