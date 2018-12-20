@@ -4,7 +4,7 @@ The Graphic Entity Module includes two different classes to display text, here's
 
 ## Text
 
-The basic class to display text, it will be displayed as a label on you screen.
+The basic class to display text, it will be displayed as a label in the viewer.
 
 ```java
 graphicEntityModule.createText("Hello World")
